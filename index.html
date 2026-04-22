@@ -3,43 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farewell Memories</title>
+    <title>Our College Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
-            height: 100vh; 
-            background-color: #1a1a1a; 
-            color: #ffffff;
-            text-align: center;
+            background-color: #fdf6e3; /* Parchment color */
+            font-family: 'Poppins', sans-serif; 
+            color: #4a3728; 
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
         }
-        h1 { margin-bottom: 30px; }
+        .container { max-width: 600px; width: 100%; text-align: center; }
+        h1 { font-family: 'Dancing Script', cursive; font-size: 3rem; margin-bottom: 10px; }
+        
+        img { 
+            width: 100%; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin: 20px 0;
+            border: 5px solid #fff;
+        }
+
         .btn { 
             display: block; 
-            width: 250px; 
+            width: 80%; 
+            margin: 15px auto;
             padding: 15px; 
-            margin: 10px; 
             text-decoration: none; 
             color: white; 
-            border-radius: 8px; 
+            border-radius: 50px; 
             font-weight: bold; 
-            transition: transform 0.2s, background-color 0.2s;
+            transition: transform 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Dancing Script', cursive; font-size: 1rem; margin-bottom: 10px;
         }
         .btn:hover { transform: scale(1.05); }
-        .btn-view { background-color: #28a745; } /* Green */
-        .btn-upload { background-color: #007bff; } /* Blue */
+        .btn-view { background-color: #14047b; } /* Burnt Orange */
+        .btn-upload { background-color: #f08f34; } /* Forest Green */
+        
+        footer { margin-top: 40px; font-size: 0.9em; opacity: 0.7; }
     </style>
 </head>
 <body>
-    <h1>Farewell Memories</h1>
-    
-    <a href="https://drive.google.com/drive/folders/1glhDEECLZ4q04WzbZXaOIxBrfpc5FGTL?usp=drive_link" class="btn btn-view" target="_blank">View Memories</a>
-    <a href="https://drive.google.com/drive/folders/1xrp3bHUwxQ3U78BrCH-5a2vBUHf1eMA8?usp=drive_link" class="btn btn-upload" target="_blank">Upload Your Photos</a>
-    
-    <p style="margin-top: 20px; font-size: 0.8em; color: #888;">Built for the Batch of 2026</p>
+
+    <div class="container">
+        <h1>Our College Journey</h1>
+        
+         <img src="building.jpg" alt="Fergusson College Main Building">
+        
+        <p><em>"Chased dreams, shared laughter, memories forever."</em></p>
+
+       
+        <img src="card.jpg" alt="College Journey Card">
+
+        <a href="https://drive.google.com/drive/folders/1glhDEECLZ4q04WzbZXaOIxBrfpc5FGTL?usp=sharing" class="btn btn-view" target="_blank">View Memories</a>
+        <a href="https://drive.google.com/drive/folders/1xrp3bHUwxQ3U78BrCH-5a2vBUHf1eMA8?usp=drive_link" class="btn btn-upload" target="_blank">Upload Photos</a>
+
+        <footer>
+            <p>FC Bugs • Farewell</p>
+        </footer>
+    </div>
+
 </body>
 </html>
